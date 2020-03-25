@@ -1,0 +1,28 @@
+{
+    "log-driver": "json-file",
+    "log-opts": {
+        "max-size": "100m",
+        "max-file": "3"
+    },
+    "live-restore": true,
+    "max-concurrent-downloads": 10,
+    "max-concurrent-uploads": 10,
+    "storage-driver": "overlay2",
+    "storage-opts": [
+        "overlay2.override_kernel_check=true"
+    ],
+    "exec-opts": ["native.cgroupdriver=systemd"],
+    "registry-mirrors": [
+        "https://2h3po24q.mirror.aliyuncs.com",
+        "http://dockerhub.azk8s.cn",
+        "https://mirror.ccs.tencentyun.com",
+        "http://f1361db2.m.daocloud.io",
+        "http://hub-mirror.c.163.com",
+        "https://docker.mirrors.ustc.edu.cn",
+        "https://reg-mirror.qiniu.com",
+    ],
+    "insecure-registries": [
+        "registry.docker-cn.com",
+        "docker.mirrors.ustc.edu.cn"
+    ]
+}
