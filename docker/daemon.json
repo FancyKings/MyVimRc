@@ -14,15 +14,15 @@
     "exec-opts": ["native.cgroupdriver=systemd"],
     "registry-mirrors": [
         "https://2h3po24q.mirror.aliyuncs.com",
-        "http://dockerhub.azk8s.cn",
-        "https://mirror.ccs.tencentyun.com",
-        "http://f1361db2.m.daocloud.io",
-        "http://hub-mirror.c.163.com",
         "https://docker.mirrors.ustc.edu.cn",
+        "https://mirror.ccs.tencentyun.com",
         "https://reg-mirror.qiniu.com",
+        "https://registry-1.docker.io"
     ],
     "insecure-registries": [
-        "registry.docker-cn.com",
-        "docker.mirrors.ustc.edu.cn"
+        "http://hub-mirror.c.163.com",
+        "http://dockerhub.azk8s.cn",
+        "http://f1361db2.m.daocloud.io",
+        "http://registry.docker-cn.com"
     ]
 }
