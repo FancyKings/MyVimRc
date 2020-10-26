@@ -1,5 +1,7 @@
 - docker-ce
   
+  > 
+  
   - CentOS / RedHat / Fedora
     > For Fedora: centos -> fedora
     ```shell
@@ -34,13 +36,13 @@
 
   ```shell
   cp  /etc/docker/daemon.json{,-bak}
-  curl -sSL https://url.cn/5p1qhXo > etc/docker/daemon.json
+  curl -sSL https://cdn.jsdelivr.net/gh/FancyKings/scripts/docker/daemon.json > etc/docker/daemon.json
   ```
 
 - 镜像站点测速
 
   ```shell
-  curl -sSL https://url.cn/5bHkKgq | bash
+  curl -sSL https://cdn.jsdelivr.net/gh/lework/script/shell/docker_hub_speed_test.sh | bash
   ```
 
 - docker.io 镜像加速
@@ -65,25 +67,25 @@
 - 下载gcr镜像
 
 	```shell
-  curl -sSL https://url.cn/5aLmxqd | bash -s gcr.io/google_containers/kube-apiserver:v1.16.3
+  curl -sSL https://cdn.jsdelivr.net/gh/kuailemy123/kubernetes-manual/scripts/getgcr.sh | bash -s gcr.io/google_containers/kube-apiserver:v1.16.3
   ```
   
 - 下载k8s镜像
 
   ```shell
-  curl -sSL https://url.cn/5aLmxqd | bash -s k8s.gcr.io/pause-amd64:3.1
+  curl -sSL https://cdn.jsdelivr.net/gh/kuailemy123/kubernetes-manual/scripts/getgcr.sh | bash -s k8s.gcr.io/pause-amd64:3.1
   ```
   
 - 指定k8s版本，下载全套件
 
   ```shell
-  curl -sSL https://url.cn/5aLmxqd | bash -s - -t v1.16.3
+  curl -sSL https://cdn.jsdelivr.net/gh/kuailemy123/kubernetes-manual/scripts/getgcr.sh | bash -s - -t v1.16.3
   ```
   
 - 下载quay.io镜像
 
   ```shell
-  curl -sSL https://url.cn/5aLmxqd | bash -s quay.io/coreos/kube-state-metrics:v1.7.2
+  curl -sSL https://cdn.jsdelivr.net/gh/kuailemy123/kubernetes-manual/scripts/getgcr.sh | bash -s quay.io/coreos/kube-state-metrics:v1.7.2
   ```
   
 - docker HTTP/HTTPS 代理
