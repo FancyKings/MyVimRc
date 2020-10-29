@@ -31,12 +31,25 @@
     sudo apt-get update
     sudo apt-get install docker-ce
     ```  
+    
+  - Oneline command By DaoCloud
+  
+    ```shell
+    curl -sSL https://get.daocloud.io/docker | sh
+    ```
  
 - docker 客户端
 
   ```shell
   cp  /etc/docker/daemon.json{,-bak}
-  curl -sSL https://cdn.jsdelivr.net/gh/FancyKings/scripts/docker/daemon.json > etc/docker/daemon.json
+  curl -sSL https://cdn.jsdelivr.net/gh/FancyKings/scripts/docker/daemon.json > /etc/docker/daemon.json
+  ```
+  
+- docker-compose
+
+  ```shell
+  curl -L https://get.daocloud.io/docker/compose/releases/download/1.27.4/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+  chmod +x /usr/local/bin/docker-compose
   ```
 
 - 镜像站点测速
